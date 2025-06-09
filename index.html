@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale-1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3579510e29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!img src="Images/7.png" class="logo">
+            <img src="Images/Bestlogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Certifications">Certifications</a></li>
+                <li><a href="#My Bin">Bin</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="mut">~Pioneering AI for Earth's Next Chapter~</p>
+        </div>
+    </div>
+</div>
+<!----------------------------------------ABOUT--------------------------------------- -->
+<div id="about">
+    <div class ="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/skillset.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Skills</h1>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>AI/ML </span><br>
+                        <h3>Supervised & Unsupervised Learning</h3>
+                            <h1>(Classification, Clustering, Dimensionality Reduction)</h1>
+                        <h1>.</h1>
+                        <h3>Deep Learning Architectures</h3>
+                            <h1>CNNs, RNNs, LSTMs, Transformers, GANs, Autoencoders</h1>
+                        <h1>.</h1>
+                        <h3>Reinforcement Learning</h3>
+                            <h1>Q-Learning, Deep Q Networks (DQN), PPO, A2C</h1>
+                        <h1>.</h1>
+                        <h3>Natural Language Processing (NLP)</h3>
+                            <h1>BERT, GPT-based LLMs, Tokenization, Named Entity Recognition, Sentiment Analysis, Text-to-Speech (TTS), Speech-to-Text, Prompt Engineering</h1>
+                        <h1>.</h1>
+                        <h3>Transfer Learning & Model Compression</h3>
+                            <h1>PEFT, LoRA, QLoRA, Knowledge Distillation, Fine-Tuning HuggingFace Transformers</h1>
+                        <h1>.</h1>
+                        <h3>Classical ML Algorithms</h3>
+                            <h1>SVM, KNN, Random Forest, Logistic/Linear Regression, Decision Trees</h1>
+                        <h1>.</h1>
+                        <h3>MLOps</h3></li>
+
+                        <li class="hidden-skill"><span>Generative & Predictive Modeling</span><br>
+                        <h3>Time Series Forecasting</h3>
+                            <h1>ARIMA, SARIMAX, NeuralProphet, Rolling Window Analysis</h1>
+                        <h1>.</h1>
+                        <h3>Generative Modeling</h3>
+                            <h1>GANs, ESRGAN, Diffusion Models (Stable Diffusion, Latent Diffusion), LangChain, LLM, RAG</h1>
+                        <h1>.</h1>
+                        <h3>Pattern & Anomaly Detection</h3>
+                            <h1>Isolation Forest, k-Means Clustering, Sensor-based Anomalies</h1>
+                        <h1>.</h1>
+                        <h3>Semantic Similarity & Embeddings</h3>
+                            <h1>Word2Vec, GloVe, BERT Embeddings, Sentence Transformers</h1></li>
+
+                        <li class="hidden-skill"><span>Computer Vision & 3D Reconstruction</span><br>
+                        <h3>Supervised & Unsupervised Learning</h3>
+                            <h1>(Classification, Clustering, Dimensionality Reduction)</h1>
+                        <h1>.</h1>
+                        <h3>Deep Learning Architectures</h3>
+                            <h1>CNNs, RNNs, LSTMs, Transformers, GANs, Autoencoders</h1>
+                        <h1>.</h1>
+                        <h3>Reinforcement Learning</h3>
+                            <h1>Q-Learning, Deep Q Networks (DQN), PPO, A2C</h1>
+                        <h1>.</h1>
+                        <h3>Natural Language Processing (NLP)</h3>
+                            <h1>BERT, GPT-based LLMs, Tokenization, Named Entity Recognition, Sentiment Analysis, Text-to-Speech (TTS), Speech-to-Text, Prompt Engineering</h1>
+                        <h1>.</h1>
+                        <h3>Transfer Learning & Model Compression</h3>
+                            <h1>PEFT, LoRA, QLoRA, Knowledge Distillation, Fine-Tuning HuggingFace Transformers</h1>
+                        <h1>.</h1>
+                        <h3>Classical ML Algorithms</h3>
+                            <h1>SVM, KNN, Random Forest, Logistic/Linear Regression, Decision Trees</h1></li>
+
+                        <li class="hidden-skill"><span>Data Handling & Optimization</span><br>
+                        <h3>Data Cleaning & Preprocessing</h3>
+                            <h1>Handling Missing Data, Label Encoding, One-Hot Encoding, CI/CD Pipeline,ETL Pipeline(Apache Airflow)</h1>
+                        <h1>.</h1>
+                        <h3>Feature Engineering & Selection</h3>
+                            <h1>PCA, Statistical Feature Extraction, Mutual Information</h1>
+                        <h1>.</h1>
+                        <h3>Model Evaluation & Tuning</h3>
+                            <h1>Cross-Validation, ROC-AUC, Grid Search, Bayesian Optimization</h1>
+                        <h1>.</h1>
+                        <h3>Optimization Techniques</h3>
+                            <h1>Gradient Descent, Adam, Particle Swarm Optimization (PSO)</h1>
+                        <h1>.</h1>
+                        <h3>Big Data & GPU Computing</h3>
+                            <h1>RAPIDS.ai (cuDF, cuML), CUDA Acceleration, Multi-GPU Training</h1>
+                        <h1>.</h1>
+                        <h3>Classical ML Algorithms</h3>
+                            <h1>SVM, KNN, Random Forest, Logistic/Linear Regression, Decision Trees</h1></li>
+
+                        <li class="hidden-skill"><span>Frameworks & Libraries </span><br>
+                        <h3>ML/DL Frameworks</h3>
+                            <h1>TensorFlow, PyTorch, Keras, Fastai, Scikit-learn</h1>
+                        <h1>.</h1>
+                        <h3>Data & Viz</h3>
+                            <h1>Pandas, NumPy, Matplotlib, Seaborn, Plotly</h1>
+                        <h1>.</h1>
+                        <h3>Vision/NLP</h3>
+                            <h1>OpenCV, HuggingFace Transformers, Gensim, NLTK, spaCy</h1>
+                        <h1>.</h1>
+                        <h3>GPU-Accelerated Libraries</h3>
+                            <h1>RAPIDS (cuDF, cuML, cuGraph), CUDA Programming using </h1>
+                        <h1>.</h1>
+                        <h3>Simulation & Animation</h3>
+                            <h1>Omniverse Isaac Sim, Matplotlib Animations, OpenAI Gym</h1></li>
+
+                        <li class="hidden-skill"><span>Tools, IDEs & Platforms</span><br>
+                        <h3>IDEs</h3>
+                            <h1>Jupyter Lab, VS Code, PyCharm, Google Colab</h1>
+                        <h1>.</h1>
+                        <h3>Version Control</h3>
+                            <h1>Git, GitHub ,GitHub Actions</h1>
+                        <h1>.</h1>
+                        <h3>Virtualization & Deployment</h3>
+                            <h1>Docker, TensorFlow Lite</h1>
+                        <h1>.</h1>
+                        <h3>Cloud Platforms</h3>
+                            <h1>AWS (SageMaker, EC2, S3), Google Cloud, Hugging Face Hub, Flask, FastAPI, Astronomer</h1>
+                        <h1>.</h1>
+                        <h3>Experiment Tracking</h3>
+                            <h1>TensorBoard, Weights & Biases, Grafana, PostgreSQL</h1>
+                        <h1>.</h1>
+                        <h3>Linux ,Shell Scripting & Coding</h3>
+                            <h1>Ubuntu, bash/zsh scripting, Cursor AI(For Coding Assistance)</h1></li>
+                        
+                        <li class="hidden-skill"><span>Soft Skills</span><br>
+                        <h3>Problem Solving & Critical Thinking</h3>
+                            <h1>Proven by diverse AI applications across vision, NLP, and forecasting</h1>
+                        <h1>.</h1>
+                        <h3>Team Collaboration</h3>
+                            <h1>Experience in collaborative research projects and internships</h1>
+                        <h1>.</h1>
+                        <h3>Communication</h3>
+                            <h1>Technical blogging, documentation, and public GitHub repos/h1>
+                        <h1>.</h1>
+                        <h3>Research Mindset</h3>
+                            <h1>Scholarly projects (e.g., Exoplanet detection, 3D protein structure)</h1>
+                        <h1>.</h1>
+                        <h3>Ethical AI Awareness</h3>
+                            <h1>Bias mitigation, fairness, and data privacy best practices</h1>
+                        <h1>.</h1>
+                        <h3>Adaptability & Learning Agility</h3>
+                            <h1>Rapid prototyping, continuous learning of emerging AI tech</h1></li>
+                    </ul>
+                    <button id="seeMoreBtn" class="btn">See More </button>
+                    <button id="minimizeBtn" class="btn hidden">Minimize </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------------Projects------------------------- -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="Projects-list">
+            <div class="project visible primary-project">
+                <i class="fa-solid fa-copyright"></i>
+                <h2>NeuroPsych Trading Assistant: A Neuromorphic Multi-Agent System with Brain-Computer Interface for Computational Psychiatry in Financial Markets</h2>
+                <h3>Description:</h3>
+                <p>The NeuroPsych Trading Assistant represents a groundbreaking convergence of neuromorphic computing, computational psychiatry, robotics, and electronic systems design to address the critical mental health crisis among retail traders. This project develops a comprehensive ecosystem that monitors, predicts, and intervenes in real-time to prevent emotion-driven trading losses and mental health deterioration.</p>
+                <p>My system employs cutting-edge neuromorphic hardware design, EEG-based brain-computer interfaces, computer vision, multi-agent AI coordination, and robotic companions to create the world's first comprehensive mental health support system for high-stress financial decision-making.</p>
+                <a href="#">Learn More (Comming Soon)</a>
+                <p> </p>
+                <a href="#">View (Comming Soon)</a>
+            </div>
+            <div class="project visible">
+                <i class="fa-solid fa-helicopter"></i>
+                <h2>Internship Semester (UG Final Semester) Project</h2>
+                <h3>Problem Statement:</h3>
+                <p>Aerial vehicles struggle with real-time, low-latency object detection due to small object sizes, computational constraints, and dynamic environments. This project addresses the gap by deploying an edge-optimized YOLOv7 model to enable accurate, real-time detection on drones without cloud dependency.</p>
+                <h3>Summary:</h3>
+                <p>Developed a real-time aerial object detection system using YOLOv7, trained on a custom dataset with NVIDIA Jetson AGX Xavier. Deployed on the "Tunga" aerial vehicle (NVIDIA Jetson Nano + Pixhawk) to enable edge-computing for dynamic environments. Achieved 89% mAP, 22 FPS inference speed, and 95% real-world detection accuracy, optimizing resource usage by 40% compared to baseline models. Demonstrated scalability for aerial surveillance and disaster response applications.</p>
+                <a href="https://drive.google.com/drive/folders/1M_hsP4ME88xmN1Oz7PHSEsQ62SkkizNB?usp=sharing">Learn More</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-gauge"></i>
+                <h2>Speed Estimation and Vehicle Tracking System</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional traffic monitoring systems lack accuracy in real-time speed estimation and struggle with occlusions in dense traffic. This project addresses these gaps by automating vehicle detection, tracking, and speed calculation using YOLOv8 and computer vision to enable efficient, scalable traffic analysis.</p>
+                <h3>Summary:</h3>
+                <p>This project leverages YOLOv8's state-of-the-art object detection to identify and track vehicles in real-time video streams. A custom tracking algorithm assigns persistent IDs to vehicles, enabling precise speed calculation as they cross two predefined lines. The system achieved 85%+ detection accuracy, tracked 100+ vehicles simultaneously, and computed speeds with less than 10% error relative to ground truth. Results were visualized using OpenCV, displaying bounding boxes, dynamic speed labels (in km/h), and traffic metrics (e.g., 45 vehicles moving downward vs. 32 upward). Designed for scalable traffic analysis, this solution demonstrates robust performance in real-world scenarios, offering insights for urban planning and congestion management.</p>
+                <a href="https://drive.google.com/file/d/1UqPIOl2oD8quSNWniIEDeH8kXOGdK_BF/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/17JO_k02YTMQoumhm95J3EA6V3N7fUMIE/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-dna"></i>
+                <h2>3D Protein Structure Prediction Using AlphaFold</h2>
+                <h3>Problem Statement:</h3>
+                <p>Experimental determination of protein 3D structures is time-intensive and costly, creating a vast gap between known sequences and resolved structures. This project addresses this bottleneck using AlphaFold to predict structures computationally, enabling rapid, accurate insights for biomedical research.</p>
+                <h3>Summary:</h3>
+                <p>This project leverages AlphaFold’s deep learning framework to predict high-accuracy 3D protein structures from amino acid sequences. The workflow includes environment setup in Google Colab, dependency installation (JAX, OpenMM), genetic database searches (UniRef90, smallBFD) for MSA generation via Jackhmmer, and structure prediction using monomer/multimer models. Results achieved sub-ångström RMSD accuracy in structural relaxation, with confidence scores (pLDDT) exceeding 90% for core regions. Predicted PDB files and interactive 3D visualizations (py3Dmol) are generated, enabling rapid insights for drug discovery and functional analysis. The end-to-end pipeline demonstrates 85%+ computational efficiency in Colab, bridging the gap between sequence data and structural biology applications.</p>
+                <a href="https://drive.google.com/file/d/1-tHGikDQ0KsKPzh1gkqWQimGbgzbCwzo/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1UXka9_8ueddFWr2_LIjX3dsi6l4Sc0aJ/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-dna"></i>
+                <h2>Simulation Of Evolution</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional methods for color-matching optimization struggle with high-dimensional solution spaces. This project addresses this by leveraging genetic algorithms—mimicking natural selection—to efficiently evolve image populations toward a target color, balancing exploration (mutation) and exploitation (elite selection) for rapid convergence.</p>
+                <h3>Summary:</h3>
+                <p>This project simulates evolutionary principles using a genetic algorithm to optimize a population of randomly generated images toward a target color. By iteratively selecting top-performing "elite" images, blending their RGB values through crossover, and introducing controlled mutations, the algorithm reduces the mean absolute RGB difference (fitness score) across generations. Over 50–100 generations, the system achieved a 95%+ reduction in fitness scores, converging to within 5 RGB units of the target color. The solution was extended to evolve 16x16 pixel grids, demonstrating scalability. Key metrics include mutation rate optimization (0.1–5%), elite retention (10–20%), and fitness-driven convergence, highlighting genetic algorithms' effectiveness in solving complex optimization problems with visualizable outcomes.</p>
+                <a href="https://drive.google.com/file/d/1yle4uFPpablrbNbh2vu_CeEELpXErxdH/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1vqF9JT7hqPYHwKPKEGwvOQF9Nl8c42nI/view?usp=drive_link">View</a>
+            </div>
+            
+            <div class="project visible">
+                <i class="fa-solid fa-robot"></i>
+                <h2>News Researcher AI Agents </h2>
+                <h3>Problem Statement:</h3>
+                <p>The rapid evolution of AI in robotics and healthcare creates an overwhelming volume of innovations, but manual research and content creation struggle to deliver timely, accurate, and engaging articles, hindering stakeholders from accessing actionable insights. This project automates the end-to-end process using AI agents to research, analyze, and generate high-quality technical content at scale.</p>
+                <h3>Summary:</h3>
+                <p>This AI-driven system automates and coordinates technical content creation using the CrewAI framework, integrating advanced AI models (Gemini-1.5 Flash) for research and narrative generation. The research agent identifies breakthroughs in robotics and healthcare with 85% accuracy, while the writing agent produces 40+ articles daily, combining technical depth with audience-friendly formatting. Collaborative workflows reduce manual effort by 70%, enabling rapid, scalable dissemination of cutting-edge insights.</p>
+                <a href="https://drive.google.com/file/d/18qcdREtcPKoU63REXR_Rr5VWehmk-hO-/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1LoNq_7YDIDbSJ2BDyVCWGmynYpG1KhDB/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-file-word"></i>
+                <h2>Word similarity check and predictor </h2>
+                <p>This project involves the application of Word2Vec, a popular word embedding technique, to a dataset of product reviews. The goal is to train a Word2Vec model on the review texts of cell phones and accessories and analyze semantic relationships between different words. The dataset is processed and cleaned using Gensim's utilities, and the Word2Vec model is trained and evaluated to understand word similarities and relationships.</p>
+                <a href="https://drive.google.com/file/d/1fnfMxCc-lXLICGKQ2ogI6jxUqxcocs4R/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1g2h1Doo8riJtBG4uEnmw9sHlN7gMsN5s/view?usp=drive_link">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Stock Trading Reinforcement Learning</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional algorithmic trading strategies struggle to adapt to dynamic market regimes, leading to suboptimal decisions during volatility shifts or black swan events. This project addresses this gap by developing reinforcement learning models that autonomously learn and evolve strategies from historical data, optimizing for risk-adjusted returns in unpredictable financial environments.</p>
+                <h3>Summary:</h3>
+                <p>This project develops and evaluates adaptive trading strategies using reinforcement learning (RL) with historical market data. We implemented A2C (LSTM-based) and PPO (MLP-based) algorithms in a simulated gym-anytrading environment, achieving a 18.5% cumulative return (A2C) and 12.2% return (PPO) while maintaining Sharpe ratios of 1.32 and 1.65. Performance was validated through intuitive visualizations of trades against price trends, revealing A2C’s strength in trend capture and PPO’s resilience in volatility.</p>
+                <a href="https://drive.google.com/file/d/1j_j4wVkOCFekHzcBHUX7szmujDygMjxs/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1WYAxpO8CgN8S7f8tXoYzijDIbpI1ai9A/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-dice"></i>
+                <h2>Optimized Ludo with Q-Learning</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional rule-based Ludo AI lacks adaptability to dynamic game states and opponent strategies. This project addresses the need for an autonomous agent that learns optimal moves through trial and error, using Q-learning to balance short-term rewards and long-term winning strategies.</p>
+                <h3>Summary:</h3>
+                <p>This project implements a Q-learning-based AI agent to master the strategic board game Ludo. By defining a state-action space and iteratively updating a Q-table using rewards, the agent learns optimal moves through exploration (epsilon-greedy policy) and exploitation. The AI was trained over 10,000 simulated games using Python and Ludopy, achieving an 85% win rate against rule-based opponents and a 40% reduction in average move decision time. Key innovations include dynamic reward tuning for safe piece advancement and blocking adversaries. The modular design, powered by NumPy for efficient Q-table updates, enabled the agent to adapt to complex board states, demonstrating a 92% success rate in avoiding captures. Results validate reinforcement learning’s potential for dynamic strategy games.</p>
+                <a href="https://drive.google.com/file/d/1jW5VVQMPeUcjiy11K6qEXb1s6uAtoN0p/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1pWOdf7ibGoySDqv3t-BuRXMVapnhgDbf/view?usp=sharing">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-diagram-successor"></i>
+                <h2>Fine-Tuning Llama-2-7b With LORA And QLoRA</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional fine-tuning of large models like Llama-2-7b demands prohibitive computational resources. This project addresses the challenge of efficiently adapting such models using QLoRA, enabling cost-effective customization without sacrificing performance.</p>
+                <h3>Summary:</h3>
+                <p>This project demonstrates fine-tuning the Llama-2-7b model using QLoRA, a 4-bit quantization method, to optimize memory usage while preserving performance. Leveraging the guanaco-llama2-1k dataset, the model was trained with LoRA configurations (rank=64, alpha=16) for 1 epoch, achieving 40% faster training and 50% reduced GPU memory consumption compared to full fine-tuning. Post-training evaluation via text-generation pipelines confirmed coherent outputs (e.g., 98% accuracy on domain-specific prompts). The model was compressed to 6.8GB and deployed to Hugging Face Hub, showcasing efficient adaptation of large language models for resource-constrained environments.</p>
+                <a href="https://drive.google.com/file/d/1ESxkUXoOtJHz7hCWsQNtHl7CCX6dP4p6/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1Q-SIlNpqD-UqUPjqSZOEr-mR3TSVJutm/view?usp=drive_link">View</a>
+            </div>
+            <div class="project visible">
+                <i class="fa-brands fa-searchengin"></i>
+                <h2>RAG-Powered QA System with LLAMA3</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional chatbots struggle with domain-specific queries due to static knowledge bases. This project solves dynamic information retrieval by creating a RAG system that combines real-time document processing with LLAMA3's reasoning, enabling accurate answers from user-provided technical content.</p>
+                <h3>Summary:</h3>
+                <p>Built a Retrieval-Augmented Generation (RAG) system using LLAMA3-70B and NVIDIA embeddings to enable context-aware question answering over custom documents. The system processes PDFs via LangChain text splitting, generates vector embeddings with NVIDIA models, and retrieves context using FAISS for low-latency semantic search. A Streamlit interface allows users to upload documents, trigger embeddings (processing 30+ document chunks in less than 2 sec), and query the AI (avg. response time: 1.8 sec). Achieved 89% accuracy in contextual QA benchmarks through optimized chunking strategies and hybrid retrieval. This end-to-end pipeline demonstrates efficient handling of domain-specific knowledge without model retraining.</p>
+                <a href="https://drive.google.com/file/d/1SbpRzNaI3rhNNpZgbnM-3AuH3YeDl0DD/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1OMwJPxw0sAJad32p-R23BRQ5ON2dFpIw/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-brands fa-searchengin"></i>
+                <h2>RAG On Gemma </h2>
+                <p>This project focuses on building a RAG system using GEMMA GROQ and various Langchain components. The system ingests documents from a specified directory, processes them into vector embeddings, and stores them using FAISS. Users can input questions through a Streamlit interface, and the system retrieves relevant document chunks to generate accurate responses using the GEMMA GROQ model.</p>
+                <a href="https://drive.google.com/file/d/17gXGpI1MiXpxVuuaQ7AU95V4mSus2zgM/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1nRpZqcww_5J2E0vwRG7MjD9hKdLWvU2C/view?usp=drive_link">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <h2>Sentiment Analysis Of Yelp Reviews</h2>
+                <h3>Problem Statement:</h3>
+                <p>Manual analysis of vast customer reviews is time-intensive and prone to subjective bias. This project addresses the challenge by automating sentiment classification using BERT to deliver scalable, objective insights from Yelp reviews.</p>
+                <h3>Summary:</h3>
+                <p>This project automates sentiment classification of customer reviews from Yelp using web scraping and a pre-trained BERT model. By extracting reviews from a Yelp page, preprocessing text data, and leveraging NLP techniques, the system assigns sentiment scores (1-5) to quantify customer opinions. Results showed 85% accuracy in categorizing sentiments (positive, neutral, negative), with 200+ reviews processed and visualized in a structured DataFrame. The solution enables businesses to efficiently gauge customer satisfaction trends and identify actionable insights from unstructured feedback.</p>
+                <a href="https://drive.google.com/file/d/1f5u8kNpKuST7mS8bmceZV85zKKp1-lK6/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/18cbSHKHJbbqiCqbQQEIARR13Lnhzw_we/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <h2>Sentiment Analysis On IMDB Reviews With Neural Networks</h2>
+                <p>This project focuses on building and evaluating different neural network models for sentiment analysis using IMDb movie reviews. The project involves preprocessing text data, creating word embeddings using GloVe, and training three types of neural networks: SNN, CNN, and LSTM. The performance of each model is evaluated, and the best-performing model is used to predict sentiments on unseen movie reviews. The final model and predictions are saved for future use.</p>
+                <a href="https://drive.google.com/file/d/1iiMt5LO6vCEqcYfATWiucDp11KCYKwG7/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1Bvf8isfa5dm9CDU2I8iW8Rn3uF1BWV89/view?usp=drive_link">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-brain"></i>
+                <h2>Brain Tumor Classification</h2>
+                <h3>Problem Statement:</h3>
+                <p>Manual diagnosis of brain tumors from MRI scans is time-consuming and prone to human error. This project addresses the need for an automated, accurate classification system using machine learning to improve diagnostic efficiency and reliability.</p>
+                <h3>Summary:</h3>
+                <p>This project demonstrates the development of a machine learning system to classify brain tumors in MRI images into "no tumor" and "pituitary tumor" categories. It involves preprocessing MRI scans (resizing, grayscale conversion, normalization) and training Logistic Regression and SVM models. The system achieved 97.14% accuracy with Logistic Regression and 95.51% with SVM, validated on a test dataset. Misclassification analysis highlighted robustness, with only 38 mislabeled samples out of 879. The final implementation includes a user-friendly interface for rapid tumor detection, emphasizing its potential to assist medical diagnostics. Future extensions could incorporate deep learning and multi-class tumor classification.</p>
+                <a href="https://drive.google.com/file/d/1K9G82896KDNmSb-b9LTMVGbUqitO9RGn/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1YoqHn6t47-JhjPT62kx42AUDcwteT9yP/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-lungs-virus"></i>
+                <h2>Breast Cancer Tumor Classification</h2>
+                <p>This project aims to classify breast cancer tumors into malignant or benign categories using machine learning techniques. The dataset is preprocessed by handling missing values and encoding categorical features. An SVM model is then trained and evaluated using cross-validation to ensure robust performance. A pipeline is implemented to integrate data scaling and model training, ensuring that the preprocessing steps are consistently applied during evaluation.</p>
+                <a href="https://drive.google.com/file/d/1eke8C7hTGTRWQrOC76ennX91vkL9iu99/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1tJrtIUPlj0zfnD1Iot3QdzbwVJ5epTrJ/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h2>ESRGAN (Super Resolution) </h2>
+                <p>This project involves running the ESRGAN model to enhance the resolution of images. ESRGAN is a state-of-the-art method in the field of image super-resolution, utilizing a deep learning-based approach to produce high-quality, high-resolution images from low-resolution inputs. The implementation is done using Python and PyTorch, with the model architecture and weights loaded from pre-trained models.</p>
+                <a href="https://drive.google.com/file/d/1hiYgZbDpwv2gk2T1bDi_MnIrpC-FWH5s/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/14BeY2Drf4DBNdAvrwNtJfKJopGRlKVtj/view?usp=drive_link">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-atom"></i>
+                <h2>Neuron Segmentation</h2>
+                <h3>Problem Statement:</h3>
+                <p>Manual neuron segmentation in microscopy images is time-consuming, subjective, and error-prone. This project addresses the need for an automated, scalable solution using SAM to achieve pixel-accurate neuron delineation, improving reproducibility in neurobiological studies.</p>
+                <h3>Summary:</h3>
+                <p>This project leverages Meta's Segment Anything Model (SAM) to automate neuron segmentation in microscopy images, accelerating neurobiological analysis. Using PyTorch and GPU acceleration (NVIDIA RTX 3060), SAM generates precise segmentation masks with a 0.92 mean IoU (Intersection over Union) and processes images 40% faster than manual annotation. The model adapts to diverse neuron morphologies via customizable parameters like pred_iou_thresh=0.9 and min_mask_region_area=100, validated through quantitative metrics and visual inspection. The solution demonstrates SAM’s versatility for biomedical imaging tasks while maintaining computational efficiency for scalable research applications.</p>
+                <a href="https://drive.google.com/file/d/1ze5J3K5tjZngrjqMeNPiGWKarzt9dXun/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1eyABVrUlExt-apfXNCc_txCqmLYHGzvd/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-hill-rockslide"></i>
+                <h2>Sandstones Segmentation</h2>
+                <p>This project involves building a U-Net model to segment sandstone images into different classes, such as clay, quartz, and pyrite. The project was executed on Google Colab, leveraging the GPU for faster training. The model was trained using a dataset of 128x128 pixel patches and evaluated on a separate test set. The performance of the model was assessed using accuracy and IoU metrics, achieving a mean IoU of 0.8665 and an accuracy of 96.37%.</p>
+                <a href="https://drive.google.com/file/d/10ZqytMMbCoOed2OlgPeQ9bG03xJDwe4y/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1SPavtnxRNC6XFguXxQ4lUoRz2rogrGSD/view?usp=drive_link">View</a>
+            </div>
+
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-volume-low"></i>
+                <h2>Deep Audio Classifier </h2>
+                <h3>Problem Statement:</h3>
+                <p>Urban sound recognition is challenging due to overlapping acoustic patterns and environmental noise. This project solves this by developing an MFCC-driven neural network to classify sounds accurately, enabling scalable noise monitoring and urban analytics.</p>
+                <h3>Summary:</h3>
+                <p>This project tackles urban sound classification using the UrbanSound8K dataset by extracting Mel-Frequency Cepstral Coefficients (MFCC) to train a neural network. The model achieved 85% test accuracy and was trained in under 1 hour, efficiently distinguishing 10 sound classes (e.g., drilling, sirens, street music) despite background noise. By combining dropout regularization and Adam optimization, the system demonstrates robust performance for real-world applications like noise pollution monitoring and smart city infrastructure.</p>
+                <a href="https://drive.google.com/file/d/1i_SvYd_FbdifHGsw9tb_lLQBHELGXd0K/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1oIB0Jqn38J84iPwhUxTVTIZBqH0AcxYL/view?usp=sharing">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-camera"></i>
+                <h2>Lip Read To Text </h2>
+                <h3>Problem Statement:</h3>
+                <p>Existing visual speech recognition systems struggle to accurately transcribe spoken words from lip movements due to variable lighting, speaker differences, and lack of temporal alignment. This project addresses these challenges by developing a deep learning model (3D CNN + Bidirectional LSTM) to automate silent speech interpretation with robust spatiotemporal feature extraction and CTC-based alignment-free training.</p>
+                <h3>Summary:</h3>
+                <p>This project develops a LipNet-based lip reading model using TensorFlow/Keras, integrating 3D CNNs and Bidirectional LSTMs to analyze spatiotemporal lip movements. The system achieves 18% word error rate (WER) on test data, trained with CTC loss for alignment-free text prediction. Preprocessing includes frame normalization and lip ROI extraction, while evaluation shows 83% accuracy on short phrases. Future enhancements target larger datasets and transformer-based architectures for improved robustness.</p>
+                <a href="https://drive.google.com/file/d/1hlZQTdIb1GzAGZbhJ9XJHZWV2KXZJgs8/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1ps7LjiKgnh4-PDLa24N6IDAv0J81clgl/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-cube"></i>
+                <h2>2D Image To 3D Point Cloud</h2>
+                <p>This project involves using a depth estimation model from the Hugging Face Transformers library to predict depth from a 2D image. The depth map is then used to create a point cloud, which is processed and refined to reconstruct a 3D mesh. The project employs Open3D for point cloud and 3D mesh processing and visualization.</p>
+                <a href="https://drive.google.com/file/d/1RBcmLM5-aizNkmyKtjJXM6qsc24FI_8f/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1qeGzIMvqmcuScaa15FPmolMsjsgynWNw/view?usp=sharing">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-brands fa-unity"></i>
+                <h2>Point Net Classification</h2>
+                <p>This project involves creating a 3D shape classification system using TensorFlow and the PointNet architecture. The ModelNet10 dataset is used, consisting of 3D object files in the .off format. The project includes data preprocessing, model building, training, evaluation, and visualization of the classification results.</p>
+                <a href="https://drive.google.com/file/d/1E_nkeD5kHpWI5VSPh295BF7qWroe7xem/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1KqVAM8r2UCOewm-tRPP79fMXtdxDOEwN/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-arrows-to-eye"></i>
+                <h2>Real-Time Depth Estimation with MiDaS</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional depth sensing relies on specialized hardware (e.g., LiDAR, stereo cameras), which is costly and computationally intensive. This project addresses this gap by implementing a real-time, GPU-accelerated monocular depth estimation system using lightweight MiDaS models to democratize 3D perception from standard 2D webcams.</p>
+                <h3>Summary:</h3>
+                <p>This project implements a real-time monocular depth estimation system using PyTorch and MiDaS models (DPT_Large, DPT_Hybrid, MiDaS_small) to infer 3D structure from 2D webcam input. Leveraging GPU acceleration (NVIDIA RTX 3060), it processes 20–30 FPS with optimized latency, balancing accuracy and speed: DPT_Large achieved ±5% relative depth error but slower inference (~15 FPS), while MiDaS_small prioritized speed (~30 FPS) for real-time applications. The pipeline integrates OpenCV for live video capture, PyTorch for model inference, and color-mapped depth visualization, demonstrating a hardware-efficient alternative to traditional depth sensors like LiDAR.</p>
+                <a href="https://drive.google.com/file/d/1for27_u2Bv3fheU_Av9ljfehQFm_cS03/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/17FdFmYfIyzBCxLE3S3qUmYa851rBLtkf/view?usp=drive_link">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-cloud-sun-rain"></i>
+                <h2>Weather Prediction With NeuralProphet</h2>
+                <h3>Problem Statement:</h3>
+                <p>Rising climate variability in Williamtown demands accurate temperature forecasts to mitigate risks for agriculture and infrastructure. This project addresses the gap in localized, long-term predictions by leveraging NeuralProphet to model historical weather patterns and generate actionable forecasts.</p>
+                <h3>Summary:</h3>
+                <p>This project forecasts temperature trends in Williamtown, Australia, using NeuralProphet, a hybrid time-series model combining neural networks and classical forecasting. Historical weather data (2007–2015) was preprocessed to isolate daily 3 PM temperatures, trained over 1,000 epochs to capture seasonal patterns and long-term trends. The model achieved robust performance (visualized forecasts aligned closely with historical trends) and predicted temperatures for 3+ years ahead, with residuals indicating consistent accuracy. Components like seasonality, trend, and uncertainty intervals were analyzed to validate reliability. The model was serialized with pickle for scalable deployment, demonstrating adaptability for climate analytics in agriculture, urban planning, and disaster preparedness.</p>
+                <a href="https://drive.google.com/file/d/1oPgMMp-RmQ0JqHJIn8b3l34P55cKQP5m/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1PYoDuCL8rZ_8KghvN7aFlZS8114Be_Fh/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <h2>Sales Forecasting with ARIMA and SARIMAX</h2>
+                <p>This project involves analyzing a monthly sales dataset to forecast future sales using time series analysis techniques. The data is preprocessed to handle missing values and ensure stationarity. ARIMA and SARIMAX models are then fitted to the data, and forecasts are generated for future time periods. The results are visualized to assess the model's performance.</p>
+                <a href="https://drive.google.com/file/d/1v7jX3pgUazcWWkhZTxtD72IZVf2PLK-I/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1bpkR3dSO7ezBeisGPcvImCajTWMtdvMo/view?usp=drive_link">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-list"></i>
+                <h2>Optimizing Census Data Analysis with GPU-Accelerated ML</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional CPU-based processing of large datasets like the U.S. Census suffers from computational bottlenecks, while model selection for imbalanced categorical data remains inefficient. This project solves these by implementing GPU-accelerated preprocessing with RAPIDS and systematically comparing ML models to identify the optimal approach for income prediction.</p>
+                <h3>Summary:</h3>
+                <p>This project harnessed RAPIDS' GPU acceleration to preprocess and analyze the U.S. Census dataset, addressing scalability challenges in handling 45,000+ entries with categorical features. Categorical encoding, standardization, and GPU-optimized workflows reduced preprocessing time by 60% compared to CPU methods. Four models—Logistic Regression, K-Nearest Neighbors, Random Forest, and SVM—were evaluated, with Random Forest achieving the highest accuracy (85.2%) and SVM demonstrating the best precision (88%) for ">50K" income prediction. Results highlighted a 15% performance gap between the best (Random Forest) and weakest (KNN) models, validated via confusion matrices. The end-to-end pipeline showcased RAPIDS' ability to accelerate data science workflows while maintaining interpretability, proving its value for real-world demographic analysis.</p>
+                <a href="https://drive.google.com/file/d/1GSohsE8NSQF_uYoN0VqR4O7LrpseFH4_/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1zOE7hMQKqYgffmQwg7LnFdi2lxOn2pCE/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-drum-steelpan"></i>
+                <h2>Optimizing Steel Strength Prediction Using PSO </h2>
+                <p>The project involves predicting the yield strength of steel using a Random Forest Regressor and optimizing the prediction using Particle Swarm Optimization (PSO). The process includes data preparation, model training, evaluation, and optimization of the prediction process. The PSO technique is implemented both manually and using the PySwarms library to find the optimal set of features that maximize the yield strength.</p>
+                <a href="https://drive.google.com/file/d/1BBethH-CFCfgbV5JosAT0OIFUI8aZoe3/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1Eq9p5surHhfGO9ZOM6Rt4Qu8kX_lP9KN/view?usp=sharing">View</a>
+            </div>
+
+            <div class="project visible">
+                <i class="fa-solid fa-hands"></i>
+                <h2>Rock-Paper-Scissors Hand Gesture Classifier with FasterViT</h2>
+                <h3>Problem Statement:</h3>
+                <p>Traditional CNN-based gesture classifiers struggle with balancing speed and accuracy for real-time applications. This project addresses this gap by implementing FasterViT, a vision transformer optimized for computational efficiency, to achieve sub-20ms inference times with >98% accuracy in dynamic hand gesture recognition.</p>
+                <h3>Summary:</h3>
+                <p>This project leverages the FasterViT architecture to build a real-time hand gesture classifier for rock-paper-scissors games. The dataset was enhanced using advanced preprocessing (random resizing, cropping, normalization) and augmentation techniques to improve model generalization. The fine-tuned FasterViT model achieved 98.2% validation accuracy in just 5 training epochs, optimized via GPU acceleration and adaptive learning rates. The deployed model demonstrates rapid inference times (less than 15ms/image) on an RTX 3060 GPU, enabling seamless real-time predictions. Practical integration was validated by overlaying predictions on test images, showcasing robust performance across diverse lighting and gesture variations.</p>
+                <a href="https://drive.google.com/file/d/1oK2qijwqPXxs7Ouj1AgiSHY8u-6SkZ2K/view?usp=sharing">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1bthm5ogWYgUVfjlpMgUkK1DlgV1dz90E/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-seedling"></i>
+                <h2>Daisy Or Dandilion Image Classifier </h2>
+                <p>This project involves building an image classifier to differentiate between daisies and dandelions. The classifier leverages the Swin Transformer, a powerful model for computer vision tasks, known for its efficient handling of image patches and hierarchical feature representation. The dataset consists of images of daisies and dandelions, and the project is implemented using Jupyter Lab on a local machine with an RTX 3060 GPU.</p>
+                <a href="https://drive.google.com/file/d/1nBUxmpCyBpMzLU0tK3xnk0EcXZNKEuYt/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1LZLDfW4caMM5iZhtnzs0be2uwlFv768i/view?usp=drive_link">View</a>
+            </div>
+            <div class="project hidden secondary-project">
+                <i class="fa-solid fa-face-laugh-beam"></i>
+                <h2>Happy Or Sad Image Classifier </h2>
+                <p>This project involves preprocessing image data, creating a CNN model, training it on the data, and evaluating its performance. The model is designed to classify images into two categories. After training, the model's performance is assessed, and it is saved for future use.</p>
+                <a href="https://drive.google.com/file/d/1pttNmzVRI8iq0rxXllxRMTjPgWLf9hW-/view?usp=drive_link">Learn More</a>
+                <p> </p>
+                <a href="https://drive.google.com/file/d/1_8_8PJrHWsArQF4q1NYTwgYCmY56tv1Q/view?usp=drive_link">View</a>
+            </div>
+           
+        </div>
+        <a href="#" class="btn" id="projectsToggleBtn">See More</a>
+        <a href="#" class="btn hidden" id="minimizeBtn2">Minimize</a>
+    </div>
+</div>
+<!-------------------------------------------------My Certifications--------------------------------------->
+<div id="Certifications">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <p class="tum"></p>
+        <div class="work-list">
+            <div class="work ">
+                <img src="Images/python.jpg">
+                <div class="layer">
+                    <h3>Python</h3>
+                    <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+                    <a href="https://drive.google.com/file/d/1oV5Wvv7CxR7fs9VV0nSCZqLSoxXO7Snt/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/7.png">
+                <div class="layer">
+                    <h3>AI</h3>
+                    <p>Artificial Intelligence (AI), the ability of a digital computer or computer-controlled robot to perform tasks commonly associated with intelligent beings.</p>
+                    <a href="https://drive.google.com/file/d/17dc_cd4Hvm1ACTfkU0VzbM-9IHBhmd2k/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work=1.png">
+                <div class="layer">
+                    <h3>Tensor Flow</h3>
+                    <p>
+                        TensorFlow is an open-source machine learning framework developed by Google for building and deploying machine learning models.
+                    </p>
+                    <a href="https://drive.google.com/file/d/172ohQe8Fe9jTYLu-u5redCzZM8NY6xtU/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/pytorch.png">
+                <div class="layer">
+                    <h3>PyTorch</h3>
+                    <p>
+                        PyTorch is a machine learning library based on the Torch library, used for applications such as computer vision and natural language processing, originally developed by Meta AI and now part of the Linux Foundation umbrella.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1R1Bu7XZ1AbR1xP1gNgSLFhlutFpPbj5H/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/computer vision.jpg">
+                <div class="layer">
+                    <h3>Modern Computer Vision</h3>
+                    <p>
+                        Computer vision is a field of computer science that focuses on enabling computers to identify and understand objects and people in images and videos. 
+                    </p>
+                    <a href="https://drive.google.com/file/d/1_SpAOTD2mU9YNKFiGtkKIF6YdgGs-YZj/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/cloud .png">
+                <div class="layer">
+                    <h3>Introduction to Cloud Computing</h3>
+                    <p>Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user.</p>
+                    <a href="https://drive.google.com/file/d/1Q3aX09mKlwJWN60l34-s1L7ZRGxbmUDw/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/Prompt Engineer.jpg">
+                <div class="layer">
+                    <h3>Prompt Engineering for AI</h3>
+                    <p>Prompt engineering is the process where you guide generative artificial intelligence (generative AI) solutions to generate desired outputs.</p>
+                    <a href="https://drive.google.com/file/d/1lJwe904M6UZYBfptsMwOvGr0WsPBUuzB/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/AI Agents.png">
+                <div class="layer">
+                    <h3>Intro to AI Agents: Build an Army of Digital Workers with AI</h3>
+                    <p>In intelligence and artificial intelligence, an intelligent agent is an agent acting in an intelligent manner. It perceives its environment, takes actions autonomously in order to achieve goals, and may improve its performance with learning or acquiring knowledge. </p>
+                    <a href="https://drive.google.com/file/d/1HBQla_Amc2pVPjsz3utDljtaT28IziE0/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/ML_Ops_Venn_Diagram.svg.png">
+                <div class="layer">
+                    <h3>MLOps</h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/llm_workflow.jpg">
+                <div class="layer">
+                    <h3>2025 Bootcamp: Generative AI, LLM Apps, AI Agents, Cursor AI</h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/Nvidia Rapids.jpg">
+                <div class="layer">
+                    <h3>AI Application Boost with Nvidia Rapids Acceleration</h3>
+                    <p>RAPIDS is a suite of open-source software libraries and APIs for executing data science pipelines entirely on GPUs—and can reduce training times from days to minutes.</p>
+                    <a href="https://drive.google.com/file/d/1RcJUL5vQBuAMAsj7JDl8KqxfHTG89BoL/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Satellite.png">
+                <div class="layer">
+                    <h3>Disaster Risk Monitoring using Satellite Imagery (NVIDIA)</h3>
+                    <p>
+                        One remarkable instance of satellite imagery in disaster management was during the 2011 Japan earthquake and tsunami. Satellite data helped assess the extent of the damage, guiding rescue efforts and aid distribution. 
+                    </p>
+                    <a href="https://drive.google.com/file/d/1vWMNqgwWaA6SYa1Je1Y_IwbufqJYTMCM/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work ">
+                <img src="Images/Omniverse.jpg">
+                <div class="layer">
+                    <h3>Develop ,Customize ,and Publish in Omniverse with Extensions</h3>
+                    <p>NVIDIA Omniverse is a scalable, multi-GPU real-time development platform for building and operating metaverse apps.</p>
+                    <a href="https://drive.google.com/file/d/1ZOKLaLpfdsCqG2ofdKa6VeLeNFL4s4my/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn hidden" id="minimizeBtn">Minimize</a>
+    </div>
+</div>
+<!---------------------------------------My Bin----------------------------------->
+<div id="My Bin">
+    <div class="container">
+        <h1 class="sub-title">My Bin</h1>
+        <p class="tum"></p>
+        <div class="work-list">
+            <div class="work ">
+                <img src="Images/bin.png">
+                <div class="layer">
+                    <h3>My learning through Research </h3>
+                    <p>Research from Youtube, Internet Articles and Research papers.</p>
+                    <a href="https://drive.google.com/drive/folders/1VX17hprTORPRUBvXfWzZXUnE86PHKx-8?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#" class="btn hidden" id="minimizeBtn">Minimize</a>
+    </div>
+</div>
+<!----------------------------------------Contact Me------------------------------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ksrujan_be19@thapar.edu</p>
+                <p><i class="fa-solid fa-paper-plane"></i>kt.srujan@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9100725768</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/srujan.hardik/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/srujan29_?igshid=YTQwZjQ0NmI0OA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/k-srujan2                    "><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Srujan29112001?tab=overview&from=2023-11-01&to=2023-11-30"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Images/CV_Srujan_AI Engineer.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <spanx id="msg"></spanx>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var siemenu = document.getElementById("sidemenu");
+    function openmenu()
+    {
+        siemenu.style.right = "0";
+    }
+    function closemenu()
+    {
+        siemenu.style.right = "-200px";
+    }
+</script>
+<script>
+document.getElementById('toggleBtn').addEventListener('click', function (event) {
+    // Prevent the default behavior of the anchor tag
+    event.preventDefault();
+
+    // Select all hidden certifications
+    var hiddenCertifications = document.querySelectorAll('.work.hidden');
+
+    // Toggle the 'hidden' class to show/hide certifications
+    hiddenCertifications.forEach(function (certification)
+    {
+        certification.classList.toggle('hidden');
+    });
+
+    // Toggle visibility of buttons
+    document.getElementById('toggleBtn').classList.toggle('hidden');
+    document.getElementById('minimizeBtn').classList.toggle('hidden');
+});
+
+document.getElementById('minimizeBtn').addEventListener('click', function (event) \
+{
+    // Prevent the default behavior of the anchor tag
+    event.preventDefault();
+
+    // Select all certifications
+    var allCertifications = document.querySelectorAll('.work');
+
+    // Hide additional certifications beyond the first 3
+    for (var i = 3; i < allCertifications.length; i++) 
+    {
+        allCertifications[i].classList.add('hidden');
+    }
+
+    // Toggle visibility of buttons
+    document.getElementById('toggleBtn').classList.toggle('hidden');
+    document.getElementById('minimizeBtn').classList.toggle('hidden');
+});
+</script>
+<script>
+    const initiallyHiddenProjects = document.querySelectorAll('.project.hidden');
+
+document.getElementById('projectsToggleBtn').addEventListener('click', function (event) {
+    event.preventDefault();
+    // Show all hidden projects
+    initiallyHiddenProjects.forEach(project => {
+        project.classList.remove('hidden');
+    });
+    // Toggle button visibility
+    this.classList.add('hidden');
+    document.getElementById('minimizeBtn2').classList.remove('hidden');
+});
+
+document.getElementById('minimizeBtn2').addEventListener('click', function (event) {
+    event.preventDefault();
+    // Hide all initially hidden projects
+    initiallyHiddenProjects.forEach(project => {
+        project.classList.add('hidden');
+    });
+    // Toggle button visibility
+    document.getElementById('projectsToggleBtn').classList.remove('hidden');
+    this.classList.add('hidden');
+});
+        
+</script>
+<script>
+    // See More Skills functionality
+    document.getElementById('seeMoreBtn').addEventListener('click', function() {
+    const hiddenSkills = document.querySelectorAll('.hidden-skill');
+    hiddenSkills.forEach(skill => {
+        skill.style.display = 'block';
+    });
+    this.classList.add('hidden');
+    document.getElementById('minimizeBtn').classList.remove('hidden');
+});
+    document.getElementById('minimizeBtn').addEventListener('click', function() {
+    const hiddenSkills = document.querySelectorAll('.hidden-skill');
+    hiddenSkills.forEach(skill => {
+        skill.style.display = 'none';
+    });
+    this.classList.add('hidden');
+    document.getElementById('seeMoreBtn').classList.remove('hidden');
+});
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMgAePb3b356XxG91zyNuVrGwzybWb_1_e0pt5yvTpxvADkznhn005EPiFC0nFRKvO/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+    
+</script>
+
+
+</body>
+</html>
